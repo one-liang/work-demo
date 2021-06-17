@@ -2,11 +2,22 @@
   <div id="nav">
     <Nav />
     <p class="text-red-500">test</p>
-    <!-- <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> -->
   </div>
   <router-view />
+  <Footer />
 </template>
+
+<script>
+import Nav from '@/components/Nav.vue';
+import Footer from './components/Footer.vue';
+
+export default {
+  components: {
+    Nav,
+    Footer,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
@@ -31,12 +42,3 @@
 }
 </style>
 
-<script>
-import Nav from '@/components/Nav.vue';
-
-export default {
-  components: {
-    Nav,
-  },
-};
-</script>
