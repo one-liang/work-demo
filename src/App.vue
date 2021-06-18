@@ -1,8 +1,5 @@
 <template>
-  <div id="nav">
-    <Nav />
-    <p class="text-red-500">test</p>
-  </div>
+  <Nav />
   <router-view />
   <Footer />
 </template>
